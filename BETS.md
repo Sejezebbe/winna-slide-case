@@ -42,3 +42,18 @@ and reveal its seed. Because it never loads on these rounds — and hasn't for m
 provably-fair verification is **unusable on the exact bets in dispute.** The player cannot see the outcomes,
 reveal the server seeds, or run the verifier through Winna's own systems. The single tool a "provably fair"
 casino gives you to check a result has been broken, on precisely these bets, the entire time.
+
+## Winna's own verifier doesn't reproduce the seeds Winna gave
+Winna provided the server seeds as its "proof" of fairness. But enter the disputed round's exact seed and
+client seed into **Winna's own live Slide fairness verifier**, and it returns **14.13x** — not the **2.38x**
+the player was actually charged on that bet:
+
+- Server seed (round 1137912977): `fd5c47777a3bdac3c1043c39502a925fa7b1012fb79c3682f138d90430988cc4`
+- Client seed (block 779588): `000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460`
+- **Winna's own verifier output: 14.13x**  ·  **Charged on the bet: 2.38x**
+
+(Screenshot: `screenshots/winna_own_verifier_returns_14.13x_not_2.38x.png`.)
+
+So the "proof" Winna handed over does not verify to the results it charged — **on Winna's own tool.** The
+mismatch also shows the VIP Slide ran a **different formula** than the game Winna's public verifier checks:
+there is no working way to verify the disputed VIP rounds on Winna's own system.
