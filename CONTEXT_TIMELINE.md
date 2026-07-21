@@ -55,7 +55,14 @@ schedule otherwise would not have been due for years).
 On 13 June, right after the fairness data was first requested, the account went unreachable for ~1 hour;
 Winna's own staff attributed it to the **devs having "updated something"** at that exact moment.
 
-**11. They kept blaming the partner who had already left.**
+**11. Then weeks of delay and shifting explanations.**
+The fairness data was first requested in mid-June and still not fully produced weeks later. And Winna's
+account of *how* the VIP Slide was provably fair kept changing — first suggesting the per-player "Limbo"
+model, then a "seeding event," before confirming the per-bet hashed-server-seed model (nonce 0, fixed client
+seed). Meanwhile the public Slide is implemented *correctly* (future block + committed hash-chain) — so this
+is not a case of an operator that doesn't understand provable fairness.
+
+**12. They kept blaming the partner who had already left.**
 Even after 14 May, Winna repeatedly cited the (departed) bankroll provider as the reason for limits, withheld
 bonuses, and delays.
 

@@ -52,6 +52,29 @@ limbo-with-nonce-0 — a different, weaker setup.)
 - **Independent statistical corroboration:** a simulation of the actual 62 bets puts the loss run at
   **~1 in 5,000** under fair play.
 
+### Further supporting facts
+
+- **They implement provable fairness *correctly* on the public Slide.** The public Slide uses a then-unmined
+  future block as the client seed plus a published committed hash-chain — the disputed VIP version had
+  neither. Winna demonstrably knows how to do it right; the VIP build stripped both safeguards.
+- **Shifting accounts of the fairness model.** Winna first pointed to a per-player "Limbo" model, then to a
+  "seeding event," before confirming the per-bet hashed-server-seed model with nonce 0 and a fixed client
+  seed — an operator that could not keep its story straight about its own game's fairness.
+- **Weeks to produce the fairness data.** It was first requested in mid-June and still not fully produced
+  weeks later. For a working provably-fair game, the commitment is a single page an operator can produce at
+  once.
+- **Gated to one player.** The VIP Slide was a private game only he (and one other person) could access —
+  opened to him on request.
+- **A known, predictable target range.** He always targets a **minimum of ~3x, mostly 3.5x–4x.** His targets
+  were therefore known in advance; against a fixed, already-public client seed, a known target band is all
+  that is needed to pre-select server seeds that land just short of it. *(Inference.)*
+- **The self-booked bet limits fit a controllable game.** Winna offered **seven-figure Slide max bets**, and
+  Paul himself acknowledged the risk of that exposure — *"if we have 3m swings on slide we could get to 10m
+  downside on [the player] v quickly"* — which is precisely why they used a bankroll provider to carry it. After the
+  provider exited on 14 May, Winna **self-booked** the VIP Slide while he was still placing $700k–$800k bets.
+  Continuing to offer that exposure on its own book, rather than cutting the limits, is consistent with an
+  operator confident it could cap its own downside. *(Circumstantial inference.)*
+
 ---
 
 ## The strongest five (what actually wins this)
