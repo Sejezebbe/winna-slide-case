@@ -47,6 +47,14 @@ limbo-with-nonce-0 — a different, weaker setup.)
 - **The push (owner, 15 May 03:26):** *"extra 5% for slide for next 24 hours."*
 - **After the loss:** the VIP Slide was removed (bet pages now error); a neutral engineer flagged the public
   Slide was reseeded **two days after** the disputed bets — *"very very strange."*
+- **[redacted].** Publicly on the [redacted], **~$6.35M was
+  deposited to [redacted] on 16 May 2026** (two transfers totaling ~$[redacted] at [redacted] and [redacted] UTC),
+  and **[redacted] [redacted] from Winna's [redacted] into [redacted] at [redacted] UTC — ~45 minutes
+  after the session** (tx `[redacted]`). The money went
+  to, and stayed in, [redacted] — [redacted].
+  > **On the two loss figures:** the **$6,345,857.66** is the player's **deposited own money** lost — the
+  > restitution figure. The larger "net to the house" figure (~$9.6M) is bigger only because he also played
+  > through and lost **cashback / site bonuses** he'd been credited (not his own out-of-pocket money).
 - **Interference on the fairness request (13 June):** account unreachable ~1 hour immediately after the
   fairness data was requested; staff attributed it to the devs *"updat[ing] something."*
 - **Independent statistical corroboration:** a simulation of the actual 62 bets puts the loss run at

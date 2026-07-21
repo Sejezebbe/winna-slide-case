@@ -37,9 +37,11 @@ Owner, **15 May 03:26:** *"cashback reset … extra 5% for slide for next 24 hou
 Slide-specific incentive hours before the session.
 
 **7. The loss.**
-Across **62 bets on 15–16 May** he lost **61 of 62** — ~$10.5M wagered, **~$9.6M net to Winna.** Winna's own
-Bet Details UI shows his targets were 3.5x–4x (e.g. a $800k bet at target 3.50x returning 2.38x; a $700k bet
-at target 4x returning 2.33x) — all losses.
+Across **62 bets on 15–16 May** he lost **61 of 62** — ~$10.5M wagered, **~$9.6M net to Winna.** His own
+deposited money lost was **$6,345,857.66** (the restitution figure); the net-to-house figure is larger only
+because he also played through and lost cashback/site bonuses he'd been credited. Winna's own Bet Details UI
+shows his targets were 3.5x–4x (e.g. a $800k bet at target 3.50x returning 2.38x; a $700k bet at target 4x
+returning 2.33x) — all losses.
 
 **8. [redacted].**
 On-chain, **[redacted] [redacted] into [redacted] ~45 minutes after the session** (16 May [redacted]
