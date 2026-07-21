@@ -23,7 +23,22 @@ formula — see [`SEEDS.md`](SEEDS.md)):
 reveal chain to nothing: not to each other, not to any published commitment (checked to 11,000,000 hashes,
 both encodings). A provably-fair game can produce that committed chain on demand; Winna could not.
 
-## The bet pages no longer load
-The VIP Slide was removed the day after the losses. Its bet-detail pages on winna.com now return errors, so
-the rounds can no longer be displayed even through Winna's own systems. *(Bet-detail screenshots taken at the
-time, showing the targets and results, are preserved.)*
+## See for yourself: the results no longer render
+The VIP Slide was removed the day after the losses. The disputed bets still open on winna.com — but **the
+result no longer displays.** You see the bet and the $0.00 payout, but the multiplier/result box is blank and
+loads indefinitely.
+
+Open a real round from the disputed session — a **$29,887.62** bet that returned **$0.00** (Slide / Winna
+Originals, placed 16 May 2026, Support ID 1137936885). The bet loads; the result is gone:
+
+**https://winna.com/?betId=5bd84d4c-8463-40c6-a2f4-6667414b1ef6**
+
+This is the exact behaviour reported from the start ("the page loads forever and won't show the multiplier").
+Bet-detail screenshots taken *earlier* — when the results still rendered, showing targets of 3.5x–4x and the
+losing multipliers — are preserved.
+
+**And this is the crux:** on a provably-fair game, the bet-detail page is the *one place* you verify a result
+and reveal its seed. Because it never loads on these rounds — and hasn't for months — Winna's own
+provably-fair verification is **unusable on the exact bets in dispute.** The player cannot see the outcomes,
+reveal the server seeds, or run the verifier through Winna's own systems. The single tool a "provably fair"
+casino gives you to check a result has been broken, on precisely these bets, the entire time.
