@@ -1,0 +1,11 @@
+// SLIDE result fn 'ol' (96.5% public)
+function ol(e,t){const s=Ge.sha256.hmac.create(e);s.update(t);const n=s.hex().substring(0,8),i=parseInt(n,16);return Math.max(1,2**32/(i+1)*al)}
+
+// LIMBO result fn 'ro' (0.99) + float 'Ve'/'re'/'no'
+function ro(e){const i=1e8/(Ve(e)*1e8)*.99,r=Math.floor(i*100)/100;return Math.max(r,1)}
+
+// byte generator 'ca' (HMAC clientSeed:nonce:cursor)
+function*ca(e,t=0,s=0){const{clientSeed:n,serverSeed:i,nonce:r}=e;let o=t,c=s;for(;;){const l=Ge.sha256.hmac.create(i);l.update(`${n}:${r}:${o}`);const p=l.digest();for(let h=c;h+4<=p.length;h+=4)yield((p[h]<<24|p[h+1]<<16|p[h+2]<<8|p[h+3])>>>0)/4294967296;o++,c=0}}
+
+// float gen 'no' + 're'
+function re(e,t){const s=no(e),n=Array.from({length:t*4},()=>s.next().value),i=r=>r.reduce((o,c,l)=>o+c/256**(l+1),0);return to(n,4).map(i)}function*no({serverSeed:e,clientSeed:t,nonce:s}){let n=0;for(;;){const i=Ge.sha256.hmac.create(e);i.update(`${t}:${s}:${n++}`);const r=i.digest();for(let o=0;o<32;o++)yield Number(r[o])}}
