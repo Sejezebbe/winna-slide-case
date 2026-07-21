@@ -6,6 +6,23 @@ shows the operator **could** select outcomes undetectably, and had the motive an
 
 ---
 
+## The core finding: it fits neither way to be provably fair
+
+A game can be provably fair in exactly **one of two ways**, and needs only one of them:
+
+1. **The player can change their client seed** (player-controlled, or a then-unmined future block) — so the
+   operator cannot know what result a server seed will produce, and cannot grind it; **or**
+2. **The server seeds are locked into a public, pre-committed hash-chain** — so the operator cannot freely
+   choose which server seed to serve.
+
+**The VIP Slide had neither.** The client seed was fixed to an already-public **2023** Bitcoin block the
+player could not change (fails #1), *and* the revealed server seeds chain to **no** committed value (fails
+#2). With no safeguard of either kind, the result was a pure function of an operator-generated server seed
+the operator could compute and select in advance, undetectably. Everything below documents this — much of it
+in Winna's own words.
+
+---
+
 ## 1. Direct admissions, in Winna's own words
 
 **1A. The model — Winna's owner, in writing (26 June).** *The crux.*
