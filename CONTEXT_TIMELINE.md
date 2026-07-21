@@ -1,9 +1,9 @@
 # Winna VIP Slide — surrounding context & motive (dated, sourced)
 
 *The circumstantial timeline for the disputed **private VIP Slide** (15–16 May 2026), separate from the
-cryptographic proof. Every quote is verified against the chat record. Honest boundary: this shows the operator
-**could** control outcomes and had **motive** and **opportunity** — it does not claim a specific spin was
-hand-picked.*
+cryptographic proof. Every quote is verified against the chat record. To be clear: this shows the operator
+**could** control outcomes and had the **motive** and **opportunity** to — it does not claim a specific spin
+was hand-picked.*
 
 ## The timeline
 

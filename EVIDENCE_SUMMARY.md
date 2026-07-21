@@ -1,8 +1,8 @@
 # Winna VIP Slide — key evidence (verified)
 
 *Focused on the disputed private **VIP Slide** (15–16 May 2026). Every quote below is verified verbatim
-against the source record. Honest boundary throughout: we do **not** claim any specific spin was hand-picked
-— we show the operator **could** select outcomes undetectably, and had motive and opportunity.*
+against the source record. To be precise: this does **not** claim any specific spin was hand-picked — it
+shows the operator **could** select outcomes undetectably, and had the motive and opportunity to.*
 
 ---
 
@@ -41,8 +41,8 @@ limbo-with-nonce-0 — a different, weaker setup.)
 - **Risk structure (owner, 7 Mar):** *"80% them vs 20% us on all negative NGR; 40% them vs 60% us on all
   positive NGR."* → the bankroll provider carried most of the loss risk; that inverted when it exited.
 - **Pre-planned exit (owner, 12 Mar):** *"May 1st as a realistic start date … we can take them ourselves."*
-- **The exit (14 May):** the player's winnings triggered the clause that ended the partnership; from that day
-  Winna carried its own risk. *(Confirmed by the former provider.)*
+- **The exit (14 May):** the player's winnings triggered the clause that ended the bankroll arrangement; from
+  that day Winna carried its own risk.
 - **New Slide the same night (owner, 14 May 23:30):** *"ok good new slide almost live."*
 - **The push (owner, 15 May 03:26):** *"extra 5% for slide for next 24 hours."*
 - **After the loss:** the VIP Slide was removed (bet pages now error); a neutral engineer flagged the public
@@ -84,26 +84,30 @@ limbo-with-nonce-0 — a different, weaker setup.)
   After the provider exited (14 May), Winna **self-booked** the game at those limits while he placed
   $700k–$800k bets and lost $6.35M — and on 28 May his Slide limit was cut to *"100k per spin."* An operator
   offering seven-figure bespoke limits on a *self-booked*, high-volatility game, then cutting them ~90% two
-  weeks later, is consistent with a game whose downside the operator could control. *(Circumstantial
-  inference — Winna could also frame the cut as managing a now-disputing, unprofitable player.)*
+  weeks later, is consistent with a game whose downside the operator could control. *(Circumstantial — noted
+  as an inference, not proof.)*
 
 ---
 
-## The strongest five (what actually wins this)
+## The case in five points
 
-1. **The written model admission** — limbo + nonce 0 + client seed not customizable + *"could have given
-   unfavorable seed pair."* Winna concedes the exact defect.
-2. **The confirmed motive/timeline** — the win triggered the bankroll exit (14 May); Winna took its own book
-   and launched its own Slide that night; the player lost $6.35M into [redacted].
-3. **Winna's own Bet Details UI** — 3.5–4x targets, results below, $0 payout, IDs matching the seeds.
-4. **Independent corroboration** — ~1-in-5,000 statistically, a neutral engineer confirming "not provably
-   fair," and the strange 2-days-after reseed.
-5. **The 5% cashback push + exclusive access + removal** — the stacked timing around a private game only he
-   could access.
+1. **Winna's own written admission** — limbo model + nonce pegged to 0 + client seed not customizable +
+   *"could have given unfavorable seed pair."* Winna concedes the exact defect.
+2. **The timeline** — the player's win ended the bankroll arrangement (14 May); Winna took its own book and
+   launched its own Slide that night; the player lost $6.35M, which went into [redacted].
+3. **Winna's own Bet Details UI** — 3.5–4x targets, results below, $0 payout, IDs matching the revealed seeds.
+4. **Independent corroboration** — a simulation putting the loss at ~1 in 5,000 under fair play, an
+   independent engineer confirming "not provably fair," and the public Slide reseeded two days after.
+5. **The setup** — a private game only he could access, pushed with a Slide-specific cashback, removed the
+   day after the loss.
 
 ---
 
-## Keep the discipline (so it can't be discredited)
-- The claim is **"could have + motive," never "they hand-picked each loss."**
-- **Marketed as provably fair; not provably fair; refund the bets — unless you can prove otherwise.** That's
-  the whole argument.
+## What this does and does not claim
+
+- It claims the operator **could** have selected outcomes undetectably, and had the motive and opportunity —
+  established by Winna's own confirmed design and its own words. It does **not** claim any specific spin was
+  hand-picked; that would require Winna's internal server logs, which only a regulator can compel.
+- The demand is simple: the game was **marketed as provably fair; it was not.** Prove otherwise — produce a
+  valid pre-bet commitment the revealed seeds verify against, plus the server-generation logs — **or refund
+  the bets.**
