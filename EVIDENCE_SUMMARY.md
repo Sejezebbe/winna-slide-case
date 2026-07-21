@@ -63,17 +63,21 @@ limbo-with-nonce-0 — a different, weaker setup.)
 - **Weeks to produce the fairness data.** It was first requested in mid-June and still not fully produced
   weeks later. For a working provably-fair game, the commitment is a single page an operator can produce at
   once.
-- **Gated to one player.** The VIP Slide was a private game only he (and one other person) could access —
-  opened to him on request.
+- **Gated and specially provisioned for him.** The VIP Slide was a private, *high-limit* version. On 15 May
+  — hours before the session — Winna whitelisted his account to access it, in the operator's own words:
+  *"[redacted] [redacted],"* *"[redacted],"* *"can whitelist
+  ur ID."* So the ~$3M-limit Slide was bespoke to him, not a public offering.
 - **A known, predictable target range.** He always targets a **minimum of ~3x, mostly 3.5x–4x.** His targets
   were therefore known in advance; against a fixed, already-public client seed, a known target band is all
   that is needed to pre-select server seeds that land just short of it. *(Inference.)*
-- **The self-booked bet limits fit a controllable game.** Winna offered **seven-figure Slide max bets**, and
-  Paul himself acknowledged the risk of that exposure — *"if we have 3m swings on slide we could get to 10m
-  downside on [the player] v quickly"* — which is precisely why they used a bankroll provider to carry it. After the
-  provider exited on 14 May, Winna **self-booked** the VIP Slide while he was still placing $700k–$800k bets.
-  Continuing to offer that exposure on its own book, rather than cutting the limits, is consistent with an
-  operator confident it could cap its own downside. *(Circumstantial inference.)*
+- **The self-booked limits — bespoke, then slashed.** He was given a bespoke ~$3M Slide limit (whitelisted to
+  his ID on 15 May). The owner had acknowledged the risk of this exposure — *"if we have 3m swings on slide we
+  could get to 10m downside on [the player] v quickly"* — which is why they used a bankroll provider to carry it.
+  After the provider exited (14 May), Winna **self-booked** the game at those limits while he placed
+  $700k–$800k bets and lost $6.35M — and on 28 May his Slide limit was cut to *"100k per spin."* An operator
+  offering seven-figure bespoke limits on a *self-booked*, high-volatility game, then cutting them ~90% two
+  weeks later, is consistent with a game whose downside the operator could control. *(Circumstantial
+  inference — Winna could also frame the cut as managing a now-disputing, unprofitable player.)*
 
 ---
 
