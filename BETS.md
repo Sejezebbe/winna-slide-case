@@ -55,3 +55,16 @@ published commitment (checked to 11,000,000 iterations, both encodings). **No pr
 rounds has ever been produced.** That is the entire issue: the numbers are self-consistent, but there is
 nothing they were locked to beforehand — so nothing stops a losing seed from having been selected and only
 then committed.
+
+## The game was changed two days after the loss
+"Slide" is one product on one link. Around **18 May 2026 — two days after the disputed session — it was
+changed.** Rounds placed *before* the change no longer render their result (the result box loads
+indefinitely); rounds *after* it display normally. **The disputed 16 May rounds fall on the pre-change side.**
+
+This disproves the idea that the results "don't load because the game isn't live." The game *is* live, and
+post-change rounds load fine — it is specifically the **pre-change rounds, the era of the disputed bets,**
+whose results no longer display. The cutoff (~18 May) matches the independent finding that Winna reseeded the
+public Slide on 18 May.
+
+Winna's public Slide **today** is properly provably fair — a then-unmined future block plus a committed
+hash-chain. The disputed rounds predate that change, and are the ones that no longer verify or display.
