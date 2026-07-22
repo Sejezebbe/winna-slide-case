@@ -32,9 +32,13 @@ in Winna's own words.
   customizable , thats definitely correct."* [sic] → concedes the client seed **should** be player-changeable;
   the VIP's was not.
 - *"so form my understanding: - both agree that PF itself worked - BUT he claims since he couldn't set his own
-  client seed we could have given unfvaorable seed pair"* [sic] — to which he replied *"which i guess is
-  true."* → the **"could have" admission**: he restated the complaint and then endorsed it in writing;
-  confirms the client seed was operator-fixed.
+  client seed we could have given unfvaorable seed pair"* [sic] — answered, in the next message:
+  *"which i guess is true BUT: - showed [the player] sims of that day which show that overall that seed pair
+  was right at RTP - there are some other sites where u currently can't change your seed pair …"* [sic].
+  → the **"could have" admission**: he restated the complaint and endorsed it — *with* qualifications, which
+  are set out and answered in [`operator_confirmations.md`](operator_confirmations.md). The endorsement
+  confirms the client seed was operator-fixed; the qualifications go to whether the capability was used,
+  which is not what is claimed here.
 
 **1B. The RTP was an operator setting — owner.**
 - 20 June: *"I'm almost 100% sure that your VIP Slide version was on a 98% RTP Setting."*
@@ -63,8 +67,9 @@ unverifiable *"couldn't adjust them."*
 
 ## 2. Strong circumstantial: motive, opportunity, timeline
 
-- **Risk structure (owner, 7 Mar):** *"80% them vs 20% us on all negative NGR; 40% them vs 60% us on all
-  positive NGR."* → the bankroll provider carried most of the loss risk; that inverted when it exited.
+- **Risk structure (owner, 7 Mar):** under the bankroll arrangement the provider carried the large majority of
+  negative NGR and took only a minority share of positive NGR → it bore most of the loss risk, and Winna had
+  correspondingly little to gain from a large player loss. That inverted when the provider exited.
 - **Pre-planned exit (owner, 12 Mar):** *"May 1st as a realistic start date … we can take them ourselves."*
 - **The exit (14 May):** the player's winnings triggered the clause that ended the bankroll arrangement; from
   that day Winna carried its own risk.
@@ -117,8 +122,9 @@ unverifiable *"couldn't adjust them."*
 ## The case in five points
 
 1. **Winna's own written admission** — limbo model + nonce pegged to 0 + client seed not customizable +
-   *"could have given unfvaorable seed pair"* [sic] — *"which i guess is true."* Winna confirms each of these
-   design facts in writing.
+   *"could have given unfvaorable seed pair"* [sic] — answered *"which i guess is true BUT…"* (qualified in
+   the same message; see [`operator_confirmations.md`](operator_confirmations.md)). Winna confirms each of
+   these design facts in writing.
 2. **The timeline** — the player's win ended the bankroll arrangement (14 May); Winna took its own book and
    launched its own Slide that night; the player lost $6.35M on Winna's own book.
 3. **Winna's own Bet Details UI** — 3.5–4x targets, results below, $0 payout, IDs matching the revealed seeds.

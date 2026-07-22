@@ -8,9 +8,9 @@ was hand-picked.*
 ## The timeline
 
 **1. Someone else carried the player's risk — until they didn't.**
-Winna ran on a third-party bankroll provider. Per Winna's own description (owner, 7 Mar): *"80% them vs 20% us
-on all negative NGR; 40% them vs 60% us on all positive NGR."* → while the provider was in place, a large
-player loss was **mostly the provider's money**, and Winna had little to gain from it. Winna had also planned
+Winna ran on a third-party bankroll provider. Under that arrangement the provider carried the large majority
+of downside risk and took only a minority share of the upside → while it was in place, a large player loss
+was **mostly the provider's money**, and Winna had little to gain from it. Winna had also planned
 for months to drop the provider and self-fund (owner, 12 Mar: *"May 1st as a realistic start date … once this
 [VC] money hits, we can take them ourselves"*).
 
