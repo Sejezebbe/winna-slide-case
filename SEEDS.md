@@ -55,9 +55,14 @@ measures exactly how easy that is:
 | Player's target | Share of random server seeds that already LOSE |
 |---|---|
 | 3.0x | **67.3%** |
-| 3.5x | **71.9%** |
-| 4.0x | **75.6%** |
+| 3.5x | **72.0%** |
+| 4.0x | **75.5%** |
 
-At his usual 3.5x–4x targets, roughly **three out of four** randomly generated seeds already lose. And each of
-the three charged multipliers can be manufactured from scratch: **2.38x in 1,145 tries, 2.33x in 127 tries,
-2.69x in 519 tries** — trivial work for a machine.
+These are exact, not sampled: a round loses when `0.98/float < target`, and `float` is uniform on `[0,1)`, so
+the share that already loses is precisely **`1 − 0.98/target`**. At his usual 3.5x–4x targets, roughly
+**three out of four** randomly generated seeds already lose.
+
+Manufacturing one *specific* charged multiplier is just as cheap. `P(result = m) = 0.98 × (1/m − 1/(m+0.01))`,
+so the expected number of random seeds is **580 for 2.38x, 556 for 2.33x, 741 for 2.69x** — a few hundred
+hashes, microseconds of work. `verify_slide.js` prints both the closed form and a live random search; the
+search is random, so its trial count varies between runs while the expectation does not.

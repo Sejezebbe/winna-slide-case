@@ -84,8 +84,8 @@ console.log('\n=== D. The per-player "Limbo" model is also ruled out (Winna\'s o
   const shown    = 'a4c539e6b6256eee29efd039cb2a2af8270551cb8e3d39cb3ad77e8b07ee21b7'; // its published commitment
   console.log(`  His real Limbo server seed hashes to its commitment: ${sha256(unhashed) === shown ? 'YES (per-seed model works for his other games)' : 'no'}`);
   console.log('  But the disputed Slide bets are ABSENT from his per-player history, and his nonce ran');
-  console.log('  193 (Limbo, 16 May 11:53) -> 194 (Limbo, 17 May 13:39) across the entire ~40-bet Slide session');
-  console.log('  => the Slide bets consumed ZERO per-player nonces => not the per-player Limbo model either.');
+  console.log('  193 (Limbo, 16 May 11:53) -> 194 (Limbo, 17 May 13:39) across 41 of the 62 disputed Slide bets');
+  console.log('  => those bets consumed ZERO per-player nonces => not the per-player Limbo model either.');
 }
 
 console.log('\n=== E. Grinding is trivial (why "fixed client seed + nonce 0" hands over control) ===');
@@ -93,16 +93,31 @@ console.log('\n=== E. Grinding is trivial (why "fixed client seed + nonce 0" han
   // With clientSeed + nonce fixed, result is a pure function of the operator-generated server seed.
   // Show: (i) how many random seeds lose at the player's typical targets, (ii) manufacturing exact results.
   const rnd = () => crypto.randomBytes(32).toString('hex');
+  const EDGE = 0.98;
+
+  // (i) CLOSED FORM — exact, identical on every run. These are the figures cited in the complaint.
+  //     A losing round is result < target, i.e. EDGE/float < target, i.e. float > EDGE/target.
+  //     Since float is uniform on [0,1):  P(lose) = 1 - EDGE/target.
+  console.log('  Closed form (exact, reproduces identically every run):');
   for (const target of [3.0, 3.5, 4.0]) {
-    let lose = 0, T = 200000;
-    for (let i = 0; i < T; i++) if (limbo(rnd(), VIP, 0, 0, 0.98) < target) lose++;
-    console.log(`  at a ${target.toFixed(1)}x target: ${(100 * lose / T).toFixed(1)}% of random server seeds already LOSE`);
+    const p = 1 - EDGE / target;
+    let lose = 0, T = 200000;                       // Monte-Carlo cross-check of the same quantity
+    for (let i = 0; i < T; i++) if (limbo(rnd(), VIP, 0, 0, EDGE) < target) lose++;
+    console.log(`    at ${target.toFixed(1)}x: ${(100 * p).toFixed(1)}% of random server seeds already LOSE`
+      + `   [200k-sample check: ${(100 * lose / T).toFixed(1)}%]`);
   }
-  for (const b of DISPUTED) {                       // manufacture each charged result from scratch
+
+  // (ii) Expected attempts to manufacture ONE specific 2-dp multiplier m:
+  //      P(result == m) = EDGE * (1/m - 1/(m+0.01));  expected tries = 1/P.
+  console.log('  Expected random seeds needed to manufacture one specific charged multiplier:');
+  for (const b of DISPUTED) {
+    const p = EDGE * (1 / b.charged - 1 / (b.charged + 0.01));
     let tries = 0, s;
-    do { s = rnd(); tries++; } while (limbo(s, VIP, 0, 0, 0.98) !== b.charged && tries < 5000);
-    console.log(`  manufactured ${b.charged.toFixed(2)}x (a charged result) in ${tries} tries -> seed ${s.slice(0, 16)}…`);
+    do { s = rnd(); tries++; } while (limbo(s, VIP, 0, 0, EDGE) !== b.charged && tries < 200000);
+    console.log(`    ${b.charged.toFixed(2)}x: expected ${Math.round(1 / p).toLocaleString()} tries`
+      + `   [this run: ${tries.toLocaleString()} -> seed ${s.slice(0, 16)}…]`);
   }
+  console.log('  (The live search is random, so its trial count varies run to run; the expectation does not.)');
   console.log('  => an operator generating the server seed can pick a losing (or specific) one before committing its hash.');
 }
 
