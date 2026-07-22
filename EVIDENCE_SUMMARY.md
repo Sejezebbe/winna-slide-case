@@ -38,6 +38,7 @@ in Winna's own words.
 - 20 June: *"I'm almost 100% sure that your VIP Slide version was on a 98% RTP Setting."*
 - 28 May: *"on our own we actually did 98% and not the 97.5% we had on [the provider]."* → Winna ran the
   Slide itself and set the RTP.
+- 3 Mar: *"we could get slide at 1% edge btw"* → the house edge itself was a dial the operator could set.
 
 **1C. Public Slide has no nonce — owner, 14 June:** *"on slide there aren't nonces."* (The VIP used
 limbo-with-nonce-0 — a different, weaker setup.)
@@ -50,6 +51,11 @@ limbo-with-nonce-0 — a different, weaker setup.)
 | 1137916722 | $700,000 | **4x** | 2.33x | $0 | 16.05.2026 |
 
 → Winna's own interface proves the targets were 3.5–4x, all losses, tied to the exact seeds we reproduced.
+
+**1E. The operator knew the outcomes — owner, 28 May.** *"the only thing we didn't do yet is the seeding event
+… technically we would know the outcome of the rounds — but ofc couldn't adjust them."* → concedes that,
+without the seeding event, the operator **would know** each round's outcome; the only defence offered is the
+unverifiable *"couldn't adjust them."*
 
 ---
 
@@ -78,6 +84,10 @@ limbo-with-nonce-0 — a different, weaker setup.)
 - **They implement provable fairness *correctly* on the public Slide.** The public Slide uses a then-unmined
   future block as the client seed plus a published committed hash-chain — the disputed VIP version had
   neither. Winna demonstrably knows how to do it right; the VIP build stripped both safeguards.
+- **The VIP failed Winna's *own published* standard.** Winna's own Slide fairness page (archived in the repo)
+  requires the client seed to be the hash of a *"then-unmined Bitcoin block,"* fixed by a seeding event so the
+  operator did not *"choose a hash with favourable or unfavourable results."* The VIP's client seed was an
+  already-public 2023 block — so it failed Winna's own written rule, not merely an abstract PF principle.
 - **Shifting accounts of the fairness model.** Winna first pointed to a per-player "Limbo" model, then to a
   "seeding event," before confirming the per-bet hashed-server-seed model with nonce 0 and a fixed client
   seed — an operator that could not keep its story straight about its own game's fairness.

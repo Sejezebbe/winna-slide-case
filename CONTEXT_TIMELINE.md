@@ -66,6 +66,10 @@ is not a case of an operator that doesn't understand provable fairness.
 Even after 14 May, Winna repeatedly cited the (departed) bankroll provider as the reason for limits, withheld
 bonuses, and delays.
 
+**13. After the dispute, the operator cut off contact.**
+On **3 July 2026** the player reported that the operator's host **blocked him and deleted messages** (*"He
+blocked me and deleted messages"*) — after the game had already been removed and the public Slide reseeded.
+
 ## Why it matters, in one line
 
 Winna ended the arrangement where **someone else** covered the player's action, launched its own Slide the
