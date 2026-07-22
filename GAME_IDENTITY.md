@@ -40,6 +40,49 @@ https://api2.winna.com/v2/bet/info?id=a13cfccc-4e9e-4dca-acd8-815b02e5e3b8   ($1
 
 Same on-screen game. Different engine underneath.
 
+## The switch is an account-level flag — in Winna's own shipped code
+
+The three games are not just similarly named. Winna's own frontend decides **which one you get** from a flag
+on your account. From `winna_code/choceXCL.chunk.js` (archived in this repo, and publicly served from
+winna.com's CDN):
+
+```js
+isSlideEnabled: r,
+isSlideVipEnabled: o,
+isSlideAccessible: r || o,
+launchGameId: i && o ? f["slide-vip"] : e
+```
+
+Read plainly: if the user is on the Slide route (`i`) **and** their account has the VIP flag set (`o`), the
+client launches **`slide-vip`** instead of the standard game. Same route, same button, same interface — the
+game served is determined by a per-account switch.
+
+**And both games render through the identical component.** Also from `choceXCL.chunk.js`:
+
+```js
+[f.slide]: Gt,  [f["slide-vip"]]: Gt
+[f.slide]: $t,  [f["slide-vip"]]: $t
+```
+
+`slide` and `slide-vip` map to the same renderer. They are visually indistinguishable **by construction**,
+not by coincidence.
+
+## Why the disputed bet pages show nothing
+
+The bet-details / fairness panel only renders when **both** seeds are present in the response.
+From `winna_code/BwhKo_ol.chunk.js`:
+
+```js
+g = t === U["slide-vip"],
+p = t === U.slide || g,
+N = !!(d != null && d.client_seed && (d != null && d.server_seed))
+```
+
+For the disputed `slide-vip` rounds, the seed fields are not returned — so `N` is false and the fairness
+section renders nothing. The blank page is not the game being "offline"; it is the component behaving exactly
+as written when the seed data is absent. Consistent with this, `bet/info` returns `"multiplier": null` and
+`"replay_url": null` for those rounds.
+
 ## What this establishes — and what it does not
 
 **Established by the game list and the bet records:**
@@ -47,7 +90,11 @@ Same on-screen game. Different engine underneath.
 - The **62 disputed rounds** (15–16 May) were served by **`slide-vip`**, an in-house build.
 - The rounds the day before (14 May), on which the player was **winning**, were served by **`tequ_slider`**,
   the third-party provider's game.
-- A player had no way to tell, from the interface, that the game had been switched.
+- A player had no way to tell, from the interface, that the game had been switched — the two in-house games
+  share a display name, a thumbnail, and the same rendering component.
+- The substitution is driven by a **per-account flag** (`isSlideVipEnabled`) in Winna's own client code.
+- The blank fairness panel on the disputed rounds follows from the seed fields being absent, not from the
+  game being unavailable.
 
 **Not established by this document alone:** that `slide-vip` was not provably fair. That conclusion rests on
 the separate technical record — a client seed fixed to an already-public 2023 Bitcoin block, the nonce pegged
