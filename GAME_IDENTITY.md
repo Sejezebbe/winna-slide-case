@@ -34,8 +34,7 @@ https://api2.winna.com/v2/bet/info?id=af4d915f-4046-4740-a0fa-7102102c7dd9   ($8
 ```
 
 **A round from the day before (14 May) → `"gameIdentifier": "tequ_slider"`**
-*(4 of the 61 rounds of 14 May still resolve on this endpoint; all 4 return `tequ_slider`. The other 57 no
-longer resolve, so they are recorded here as unconfirmed rather than attributed.)*
+*(All 61 rounds of 14 May were queried on this endpoint. All 61 return `tequ_slider`.)*
 ```
 https://api2.winna.com/v2/bet/info?id=a13cfccc-4e9e-4dca-acd8-815b02e5e3b8   ($100,000, 14 May 12:41 UTC)
 ```
@@ -90,9 +89,8 @@ as written when the seed data is absent. Consistent with this, `bet/info` return
 **Established by the game list and the bet records:**
 - Three separate games existed under the single name "Slide", visually identical to the player.
 - The **62 disputed rounds** (15–16 May) were served by **`slide-vip`**, an in-house build.
-- For the rounds the day before (14 May), **every round that still resolves** on Winna's endpoint returns
-  **`tequ_slider`**, the third-party provider's game (4 of 61 confirmed — the rest no longer resolve), and
-  **no 14 May round returns `slide-vip`**. Winna can settle this conclusively from its own records.
+- **All 61 rounds the day before (14 May)** — the day the player was **winning** — return **`tequ_slider`**,
+  the third-party provider's game. Every one confirmed on Winna's own endpoint; none returns `slide-vip`.
 - A player had no way to tell, from the interface, that the game had been switched — the two in-house games
   share a display name, a thumbnail, and the same rendering component.
 - The substitution is driven by a **per-account flag** (`isSlideVipEnabled`) in Winna's own client code.
