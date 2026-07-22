@@ -17,7 +17,6 @@ for months to drop the provider and self-fund (owner, 12 Mar: *"May 1st as a rea
 **2. The player's large winnings end the partnership (14 May).**
 The player's mid-May winnings triggered a contractual clause, and the bankroll partnership **ended on 14 May.**
 From that moment Winna was on its **own book** — now a large player loss was **Winna's own retained gain.**
-*(Confirmed directly by the former provider.)*
 
 **3. That same night, a new in-house Slide goes live.**
 Owner, **14 May 23:30:** *"ok good new slide almost live."* → Winna's own self-booked Slide (no provider fee)
@@ -27,8 +26,8 @@ launches the very night the provider exited.
 He tried a normal public-Slide bet ($77,777 @ 4x) and was **rejected** — a bet that would have won — and was
 steered elsewhere.
 
-**5. A private game appears — for him only.**
-A private, account-gated **"VIP Slide"** was opened **only to him** (first bets 15 May) — a weakened version
+**5. A private game appears — effectively private to him.**
+A private, account-gated **"VIP Slide"** was provisioned to his account (first bets 15 May) — a weakened version
 with the provable-fairness safeguards removed (fixed, already-public 2023 client seed; nonce pegged to 0; see
 the technical package).
 
@@ -43,9 +42,8 @@ because he also played through and lost cashback/site bonuses he'd been credited
 shows his targets were 3.5x–4x (e.g. a $800k bet at target 3.50x returning 2.38x; a $700k bet at target 4x
 returning 2.33x) — all losses.
 
-**8. [redacted].**
-On-chain, **[redacted] [redacted] into [redacted] ~45 minutes after the session** (16 May [redacted]
-UTC) — [redacted]. It [redacted].
+**8. [redacted] ~45 minutes after the session.**
+On-chain, 
 
 **9. The game disappears — and the public Slide is quietly reseeded two days later.**
 The VIP Slide was **removed the day after** the losses (its bet pages now error). A neutral provably-fair
@@ -71,7 +69,7 @@ bonuses, and delays.
 ## Why it matters, in one line
 
 Winna ended the arrangement where **someone else** covered the player's action, launched its own Slide the
-same night, closed the fair game he was winning on, opened a private game only he could access with the
+same night, closed the fair game he was winning on, opened a private game effectively provisioned to him alone with the
 fairness safeguards stripped out, pushed him onto it with a 24-hour cashback, took **~$9.6M into its own
 pocket**, then deleted the game and reseeded the public one two days later — all inside roughly 72 hours.
 

@@ -64,11 +64,7 @@ limbo-with-nonce-0 — a different, weaker setup.)
 - **The push (owner, 15 May 03:26):** *"extra 5% for slide for next 24 hours."*
 - **After the loss:** the VIP Slide was removed (bet pages now error); a neutral engineer flagged the public
   Slide was reseeded **two days after** the disputed bets — *"very very strange."*
-- **[redacted].** Publicly on the [redacted], **~$6.35M was
-  deposited to [redacted] on 16 May 2026** (two transfers totaling ~$[redacted] at [redacted] and [redacted] UTC),
-  and **[redacted] [redacted] from Winna's [redacted] into [redacted] at [redacted] UTC — ~45 minutes
-  after the session** (tx `[redacted]`). The money went
-  to, and stayed in, [redacted] — [redacted].
+- **[redacted].** Publicly on the [redacted], **
   > **On the two loss figures:** the **$6,345,857.66** is the player's **deposited own money** lost — the
   > restitution figure. The larger "net to the house" figure (~$9.6M) is bigger only because he also played
   > through and lost **cashback / site bonuses** he'd been credited (not his own out-of-pocket money).
@@ -97,7 +93,7 @@ limbo-with-nonce-0 — a different, weaker setup.)
   that is needed to pre-select server seeds that land just short of it. *(Inference.)*
 - **The self-booked limits — bespoke, then slashed.** He was given a bespoke ~$3M Slide limit (whitelisted to
   his ID on 15 May). The owner had acknowledged the risk of this exposure — *"if we have 3m swings on slide we
-  could get to 10m downside on [the player] v quickly"* — which is why they used a bankroll provider to carry it.
+  could get to 10m downside on [the player] quickly"* — which is why they used a bankroll provider to carry it.
   After the provider exited (14 May), Winna **self-booked** the game at those limits while he placed
   $700k–$800k bets and lost $6.35M — and on 28 May his Slide limit was cut to *"100k per spin."* An operator
   offering seven-figure bespoke limits on a *self-booked*, high-volatility game, then cutting them ~90% two
@@ -111,12 +107,12 @@ limbo-with-nonce-0 — a different, weaker setup.)
 1. **Winna's own written admission** — limbo model + nonce pegged to 0 + client seed not customizable +
    *"could have given unfavorable seed pair."* Winna concedes the exact defect.
 2. **The timeline** — the player's win ended the bankroll arrangement (14 May); Winna took its own book and
-   launched its own Slide that night; the player lost $6.35M, which went into [redacted].
+   launched its own Slide that night; the player lost $6.35M on Winna's own book.
 3. **Winna's own Bet Details UI** — 3.5–4x targets, results below, $0 payout, IDs matching the revealed seeds.
 4. **Independent corroboration** — a simulation putting the loss at ~1 in 5,000 under fair play, an
    independent engineer confirming "not provably fair," and the public Slide reseeded two days after.
-5. **The setup** — a private game only he could access, pushed with a Slide-specific cashback, removed the
-   day after the loss.
+5. **The setup** — a private game effectively provisioned to him alone, pushed with a Slide-specific cashback,
+   removed the day after the loss.
 
 ---
 
