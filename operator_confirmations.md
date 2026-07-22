@@ -77,6 +77,19 @@ record in its own words:
   rotate your client seed on the VIP Slide, and that this differs from the mechanism described on our current
   fairness page,"* adding that *"the game has since been disabled."*
 
+### One claim in that letter is contradicted by Winna's own data
+The determination argues that *"the identical VIP Slide configuration — the same fixed client seed setup —
+applied during your winning play, including your session with net winnings of 6,399,135.85"* — i.e. that the
+mechanism now disputed had already produced wins the player kept.
+
+Winna's own API says otherwise. The 62 disputed rounds (15–16 May) carry **`gameIdentifier: "slide-vip"`**.
+The player's winning Slide play the day before carries a **different** identifier — **`tequ_slider`**, the
+third-party provider's game — while displaying under the same on-screen name, "Slide". The private
+`slide-vip` build went live on 15 May and the disputed session was the only time it was played: **62 bets,
+61 losses.** There was no winning session on that configuration.
+
+The "identical configuration" the letter relies on is, by Winna's own game identifiers, not identical.
+
 Its denial rests **solely** on *"we see no evidence that unfavourable seed pairs were assigned"* — i.e. it
 does **not** dispute that outcome selection was *possible*, only that the player cannot *prove* it was carried
 out. That inverts the standard: provable fairness means manipulation is *impossible and independently
