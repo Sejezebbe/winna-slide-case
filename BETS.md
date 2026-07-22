@@ -1,7 +1,17 @@
 # The disputed session — every bet
 
 The full VIP Slide session that the dispute concerns: **62 bets across 15–16 May 2026, 61 losses.**
-The raw list is in [`bet_log.csv`](bet_log.csv) (time, stake, payout, result — one row per bet).
+
+**Complete dataset — every bet with its Support ID and a live link:**
+[`vip_slide_session_bets.csv`](vip_slide_session_bets.csv) — 62 rows, pulled from the operator's own bet
+records (time, stake, multiplier, result, Support ID, bet-page link).
+**Full money accounting for the session:** [`SESSION_ACCOUNTING.md`](SESSION_ACCOUNTING.md).
+
+> In the operator's own API these 62 rounds carry **`gameIdentifier: "slide-vip"`** — a distinct private
+> build — while displaying as `gameName: "Slide"`. The previous day's rounds carry a different identifier
+> (`tequ_slider`, the third-party provider's slider). Same on-screen name, two different games.
+
+The earlier summary list is in [`bet_log.csv`](bet_log.csv) (time, stake, payout, result).
 
 ## The inputs (identical on every bet — this is the point)
 - **Client seed:** Bitcoin block **779588** — `000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460` (mined **6 March 2023**, public for years; the player could not change it).
