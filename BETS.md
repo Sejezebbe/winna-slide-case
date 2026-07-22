@@ -30,7 +30,7 @@ formula — see [`SEEDS.md`](SEEDS.md)):
 | 1137925965 | `933b74433ef7a3136db1c720e2d3e0bfe5f5bee58a7cabfc49eeebbe8010119c` | 2.69x |
 
 **Winna never produced the full committed set of server seeds for all 62 rounds** — and the three it did
-reveal chain to nothing: not to each other, not to any published commitment (checked to 11,000,000 hashes,
+reveal chain to nothing: not to each other, not to any published commitment (the included script checks 2,000,000 hashes; a deeper run to 11,000,000 in both encodings also found no link,
 both encodings). A provably-fair game can produce that committed chain on demand; Winna has not.
 
 ## See for yourself: the results no longer render
@@ -61,7 +61,8 @@ of fairness. An operator who chose a losing seed and revealed it afterward produ
 Real verification requires a **pre-bet commitment**: a published value, from *before* the bet, that the
 revealed seed verifies against — either a committed hash-chain the seed belongs to, or a hashed server seed
 shown before the bet. The three seeds Winna revealed **chain to nothing** — not to each other, not to any
-published commitment (checked to 11,000,000 iterations, both encodings). **No pre-bet commitment for the VIP
+published commitment (the included script checks 2,000,000 iterations; a deeper run to 11,000,000 in both
+encodings also found no link). **No pre-bet commitment for the VIP
 rounds has ever been produced.** That is the entire issue: the numbers are self-consistent, but there is
 nothing they were locked to beforehand — so nothing stops a losing seed from having been selected and only
 then committed.

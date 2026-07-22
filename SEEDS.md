@@ -19,3 +19,38 @@ All three landed **below** the player's ~3.5x–4x target — i.e. all losses.
 
 `node verify_slide.js` reproduces these exactly (section B), and section E demonstrates how few attempts it
 takes to find a server seed that produces a loss — or any specific result — against this fixed client seed.
+
+---
+
+## The method is provably correct — it reproduces Winna's own live bets
+
+The same code that reproduces the disputed rounds also reproduces **Winna's current live public Slide bets
+exactly**: bet **80030 → 39.08x** and bet **82857 → 2.79x** (section A). The formula and implementation are
+therefore not in question — only what an operator could do with them.
+
+## What a real pre-bet commitment looks like — and what the VIP had instead
+
+On the **public** Slide, Winna publishes a hash-chain committing to the terminating hash
+`890cb303b01ab53e…`. Each round's seed chains to that commitment **at a depth exactly equal to its round
+number** — bet 80030 reaches it in exactly 80,030 hashes, bet 82857 in exactly 82,857 (section C). That is a
+verifiable pre-bet commitment, and anyone can check it.
+
+The three revealed **VIP** server seeds chain to **nothing** — not to each other, not to any published
+commitment (the included script checks 2,000,000 hashes; a deeper run to 11,000,000 in both encodings also
+found no link).
+
+## How little work it takes to pick a losing seed
+
+With the client seed fixed and the nonce pegged to 0, the result is a pure function of the server seed — so an
+operator can keep generating seeds until one pays what it wants, then commit that seed's hash. Section E
+measures exactly how easy that is:
+
+| Player's target | Share of random server seeds that already LOSE |
+|---|---|
+| 3.0x | **67.3%** |
+| 3.5x | **71.9%** |
+| 4.0x | **75.6%** |
+
+At his usual 3.5x–4x targets, roughly **three out of four** randomly generated seeds already lose. And each of
+the three charged multipliers can be manufactured from scratch: **2.38x in 1,145 tries, 2.33x in 127 tries,
+2.69x in 519 tries** — trivial work for a machine.
