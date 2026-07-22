@@ -23,16 +23,18 @@ in Winna's own words.
 
 ---
 
-## 1. Direct admissions, in Winna's own words
+## 1. Direct written admissions, in Winna's own words
 
 **1A. The model — Winna's owner, in writing (26 June).** *The crux.*
 - *"for slide vip it used the limbo model but always with nonce at 0 … put his seeds and always keep nonce
   at 0 then you would correctly get the results."* → limbo model, **nonce pegged to 0**, per-bet server seed.
-- *"a … correctly implemented provably fairness verification would always be having the client seed
-  customizable, that's definitely correct."* → concedes the client seed **should** be player-changeable; the
-  VIP's was not.
-- *"both agree that PF itself worked — BUT … since he couldn't set his own client seed we could have given
-  unfavorable seed pair."* → the **"could have" admission**; confirms the client seed was operator-fixed.
+- *"a 10000% correctly implemented provably fairness verficiation would always be having the client seed
+  customizable , thats definitely correct."* [sic] → concedes the client seed **should** be player-changeable;
+  the VIP's was not.
+- *"so form my understanding: - both agree that PF itself worked - BUT he claims since he couldn't set his own
+  client seed we could have given unfvaorable seed pair"* [sic] — to which he replied *"which i guess is
+  true."* → the **"could have" admission**: he restated the complaint and then endorsed it in writing;
+  confirms the client seed was operator-fixed.
 
 **1B. The RTP was an operator setting — owner.**
 - 20 June: *"I'm almost 100% sure that your VIP Slide version was on a 98% RTP Setting."*
@@ -115,7 +117,8 @@ unverifiable *"couldn't adjust them."*
 ## The case in five points
 
 1. **Winna's own written admission** — limbo model + nonce pegged to 0 + client seed not customizable +
-   *"could have given unfavorable seed pair."* Winna concedes the exact defect.
+   *"could have given unfvaorable seed pair"* [sic] — *"which i guess is true."* Winna confirms each of these
+   design facts in writing.
 2. **The timeline** — the player's win ended the bankroll arrangement (14 May); Winna took its own book and
    launched its own Slide that night; the player lost $6.35M on Winna's own book.
 3. **Winna's own Bet Details UI** — 3.5–4x targets, results below, $0 payout, IDs matching the revealed seeds.

@@ -31,7 +31,7 @@ formula — see [`SEEDS.md`](SEEDS.md)):
 
 **Winna never produced the full committed set of server seeds for all 62 rounds** — and the three it did
 reveal chain to nothing: not to each other, not to any published commitment (checked to 11,000,000 hashes,
-both encodings). A provably-fair game can produce that committed chain on demand; Winna could not.
+both encodings). A provably-fair game can produce that committed chain on demand; Winna has not.
 
 ## See for yourself: the results no longer render
 The VIP Slide was removed the day after the losses. The disputed bets still open on winna.com — but **the

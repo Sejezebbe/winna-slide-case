@@ -19,7 +19,7 @@ bets.**
 
 ## The ask
 
-> This game was marketed as provably fair. By winna.com's own confirmed design it was **not** provably fair —
+> This game was marketed as provably fair. On the design winna.com has itself confirmed in writing, it was **not** provably fair —
 > the operator could have chosen the outcomes. **Prove that you could not have (release A, B, C below), or
 > refund the affected bets.**
 
