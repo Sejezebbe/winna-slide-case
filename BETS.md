@@ -10,6 +10,9 @@ records (time, stake, multiplier, result, Support ID, bet-page link).
 > In the operator's own API these 62 rounds carry **`gameIdentifier: "slide-vip"`** — a distinct private
 > build — while displaying as `gameName: "Slide"`. The previous day's rounds carry a different identifier
 > (`tequ_slider`, the third-party provider's slider). Same on-screen name, two different games.
+> Winna's own game list shows **three** games called "Slide", sharing one name and one thumbnail — and
+> anyone can verify the identifier for any bet without an account. See
+> [`GAME_IDENTITY.md`](GAME_IDENTITY.md).
 
 The earlier summary list is in [`bet_log.csv`](bet_log.csv) (time, stake, payout, result).
 

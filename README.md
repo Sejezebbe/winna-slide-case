@@ -37,6 +37,9 @@ generated relative to the bet, and that only one was evaluated. If those are cle
 | `verify_slide.js` | Runnable proof — reproduces the disputed results from winna.com's own formula |
 | `SEEDS.md` | The disputed rounds (seed → charged multiplier), reproduce them yourself |
 | `operator_confirmations.md` | winna.com's own written statements confirming the model |
+| `GAME_IDENTITY.md` | **Three different games all called "Slide"** — and how to verify which one served any bet, without an account |
+| `vip_slide_session_bets.csv` | All 62 disputed bets — time, stake, Support ID, live bet link |
+| `SESSION_ACCOUNTING.md` | Full money accounting for the session (deposits, prior balance, bonuses excluded) |
 | `winna_code/`, `docs/`, `blockchain/`, `screenshots/` | winna.com's own code/docs, the block data, the fairness-panel proof |
 
 ## Verify it yourself
