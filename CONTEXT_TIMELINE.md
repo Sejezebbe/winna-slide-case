@@ -31,12 +31,12 @@ A private, account-gated **"VIP Slide"** was provisioned to his account (first b
 with the provable-fairness safeguards removed (fixed, already-public 2023 client seed; nonce pegged to 0; see
 the technical package).
 
-**6. A Slide-specific cashback boost is posted — dated fact, no causal claim.**
-Owner, **15 May 03:26:** *"cashback reset for [the player] from now on to normal 25% • extra 5% for slide for next
-24 hours."* Stated as a dated fact only: on Winna's own timestamps the session had already begun (~01:38),
-18 of the 62 bets preceded this message and 41 came after the 24-hour window closed — so the boost covered
-3 bets, ~1.2% of the amount staked. **The provisioning, not the cashback, is the push:** the high-limit VIP
-Slide was whitelisted to his account (*"[redacted] [redacted]"*, *"[redacted]"*).
+**6. He is actively pushed onto it — Winna promotes the Slide to him by name.**
+Owner, **15 May 03:26:** *"guys please note: • cashback reset for [the player] from now on to normal 25% • extra 5%
+for slide for next 24 hours."* A **Slide-specific** promotional uplift, naming him, on top of a 25% cashback
+rate. He answers 20 minutes later: *"Cashback!"* (03:46). **44 of the 62 disputed bets — 85.2% of everything
+he staked, including all 41 bets of 16 May — were placed after that message.** The game Winna was promoting
+to him is the game that was not provably fair.
 
 **7. The loss.**
 Across **62 bets on 15–16 May** he lost **61 of 62** — ~$10.5M wagered, **~$9.6M net to Winna.** His own

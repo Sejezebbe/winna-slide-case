@@ -74,10 +74,10 @@ unverifiable *"couldn't adjust them."*
 - **The exit (14 May):** the player's winnings triggered the clause that ended the bankroll arrangement; from
   that day Winna carried its own risk.
 - **New Slide the same night (owner, 14 May 23:30):** *"ok good new slide almost live."*
-- **A Slide-specific cashback boost (owner, 15 May 03:26):** *"extra 5% for slide for next 24 hours."*
-  Noted as a dated fact only — the session had already begun, and on Winna's own timestamps the boost
-  covered 3 of the 62 bets (~1.2% of stake). The **whitelisting** to the high-limit VIP build is the
-  material provisioning step, not this.
+- **The push (owner, 15 May 03:26):** *"guys please note: • cashback reset for [the player] from now on to normal
+  25% • extra 5% for slide for next 24 hours."* — a **Slide-specific** boost naming him. He replies
+  *"Cashback!"* 20 minutes later. **44 of the 62 disputed bets (85.2% of stake) came after this message**,
+  including all 41 of 16 May.
 - **After the loss:** the VIP Slide was removed (bet pages now error); a neutral engineer flagged the public
   Slide was reseeded **two days after** the disputed bets — *"very very strange."*
 - **[redacted].** Publicly on the [redacted], **
