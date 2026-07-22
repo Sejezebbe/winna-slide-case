@@ -31,12 +31,16 @@ A private, account-gated **"VIP Slide"** was provisioned to his account (first b
 with the provable-fairness safeguards removed (fixed, already-public 2023 client seed; nonce pegged to 0; see
 the technical package).
 
-**6. He is actively pushed onto it — Winna promotes the Slide to him by name.**
-Owner, **15 May 03:26:** *"guys please note: • cashback reset for [the player] from now on to normal 25% • extra 5%
-for slide for next 24 hours."* A **Slide-specific** promotional uplift, naming him, on top of a 25% cashback
-rate. He answers 20 minutes later: *"Cashback!"* (03:46). **44 of the 62 disputed bets — 85.2% of everything
-he staked, including all 41 bets of 16 May — were placed after that message.** The game Winna was promoting
-to him is the game that was not provably fair.
+**6. He is actively pushed onto it — Winna promotes the Slide to him by name, minutes before he plays.**
+Owner, **15 May 01:26 UTC:** *"guys please note: • cashback reset for [the player] from now on to normal 25% •
+extra 5% for slide for next 24 hours."* Winna staff confirm the instruction a minute later: *"Noted [the owner] ✅"*.
+A **Slide-specific** uplift, naming him, on top of 25% cashback. **His first disputed bet came 12 minutes
+later (01:38:33 UTC), and all 62 disputed bets followed that message.** He replies *"Cashback!"* at 01:46
+UTC, mid-run. The game Winna was promoting to him, by name, is the game that was not provably fair.
+
+*(Times: bets are UTC from Winna's API; chat exports are UTC+2 and converted here. The two clocks are fixed
+by direct correlation — his messages at 16:38–16:51 in the export react in real time to the bets Winna's API
+timestamps 14:37:09–14:52:18 UTC on 16 May.)*
 
 **7. The loss.**
 Across **62 bets on 15–16 May** he lost **61 of 62** — ~$10.5M wagered, **~$9.6M net to Winna.** His own

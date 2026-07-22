@@ -74,10 +74,10 @@ unverifiable *"couldn't adjust them."*
 - **The exit (14 May):** the player's winnings triggered the clause that ended the bankroll arrangement; from
   that day Winna carried its own risk.
 - **New Slide the same night (owner, 14 May 23:30):** *"ok good new slide almost live."*
-- **The push (owner, 15 May 03:26):** *"guys please note: • cashback reset for [the player] from now on to normal
-  25% • extra 5% for slide for next 24 hours."* — a **Slide-specific** boost naming him. He replies
-  *"Cashback!"* 20 minutes later. **44 of the 62 disputed bets (85.2% of stake) came after this message**,
-  including all 41 of 16 May.
+- **The push (owner, 15 May 01:26 UTC):** *"guys please note: • cashback reset for [the player] from now on to
+  normal 25% • extra 5% for slide for next 24 hours."* — a **Slide-specific** boost naming him; Winna staff
+  confirm *"Noted [the owner] ✅"* a minute later. **His first disputed bet came 12 minutes later and all 62
+  disputed bets followed it.** (Chat exports are UTC+2, converted here; bets are UTC from Winna's API.)
 - **After the loss:** the VIP Slide was removed (bet pages now error); a neutral engineer flagged the public
   Slide was reseeded **two days after** the disputed bets — *"very very strange."*
 - **[redacted].** Publicly on the [redacted], **
