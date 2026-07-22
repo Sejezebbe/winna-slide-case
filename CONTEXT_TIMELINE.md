@@ -31,9 +31,12 @@ A private, account-gated **"VIP Slide"** was provisioned to his account (first b
 with the provable-fairness safeguards removed (fixed, already-public 2023 client seed; nonce pegged to 0; see
 the technical package).
 
-**6. He is actively pushed onto it.**
-Owner, **15 May 03:26:** *"cashback reset … extra 5% for slide for next 24 hours"* — a time-boxed,
-Slide-specific incentive hours before the session.
+**6. A Slide-specific cashback boost is posted — dated fact, no causal claim.**
+Owner, **15 May 03:26:** *"cashback reset for [the player] from now on to normal 25% • extra 5% for slide for next
+24 hours."* Stated as a dated fact only: on Winna's own timestamps the session had already begun (~01:38),
+18 of the 62 bets preceded this message and 41 came after the 24-hour window closed — so the boost covered
+3 bets, ~1.2% of the amount staked. **The provisioning, not the cashback, is the push:** the high-limit VIP
+Slide was whitelisted to his account (*"[redacted] [redacted]"*, *"[redacted]"*).
 
 **7. The loss.**
 Across **62 bets on 15–16 May** he lost **61 of 62** — ~$10.5M wagered, **~$9.6M net to Winna.** His own
@@ -74,7 +77,7 @@ blocked me and deleted messages"*) — after the game had already been removed a
 
 Winna ended the arrangement where **someone else** covered the player's action, launched its own Slide the
 same night, closed the fair game he was winning on, opened a private game effectively provisioned to him alone with the
-fairness safeguards stripped out, pushed him onto it with a 24-hour cashback, took **~$9.6M into its own
+fairness safeguards stripped out and whitelisted him onto it at $3M limits, took **~$9.6M into its own
 pocket**, then deleted the game and reseeded the public one two days later — all inside roughly 72 hours.
 
 ## Independent corroboration

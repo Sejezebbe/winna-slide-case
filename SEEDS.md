@@ -7,6 +7,13 @@
 - `result = max(1, floor((0.98 / float) * 100) / 100)`,
   `float` = first 4 bytes of `HMAC-SHA256(serverSeed, "{clientSeed}:0:0")`
 
+> **On the `0.98` constant — stated precisely.** The code winna.com supplied uses **`0.99`**, which yields
+> 2.41x / 2.35x / 2.71x and does **not** match what was charged. The identical code at **`0.98`** reproduces
+> **2.38x / 2.33x / 2.69x** exactly. So `0.98` is a **derived finding, not winna.com's confirmation of the
+> code** — though winna.com separately stated the setting in writing: *"I'm almost 100% sure that your VIP
+> Slide version was on a 98% RTP Setting"* (20 June) and *"on our own we actually did 98%"* (28 May).
+> The structure of the formula — HMAC, nonce 0, cursor 0 — is winna.com's own, verbatim from the code it sent.
+
 **Three revealed server seeds → the exact multipliers the player was charged:**
 
 | Round id | Revealed server seed | Result |
