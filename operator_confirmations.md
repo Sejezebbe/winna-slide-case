@@ -26,11 +26,12 @@ facts is **this analysis's**, not his. That is precisely why the demand is: **pr
   would always be having the client seed customizable , thats definitely correct"* [sic]. On the player's
   complaint: *"he has a point and its valid"*, *"its definitly not him just raging"* [sic]. He endorsed the
   standard in writing; whether the VIP Slide met it, he has never addressed in writing.
-- Asked directly about the two safeguards (a client seed the operator can't grind against, **or** a
-  pre-committed server-seed chain), the owner answered in writing, 3 July 2026: *"it was clear that the
-  client:server seed pair is fixed and we didn't link to any public commitment."* — the fixed client seed and
-  the absent public commitment, in his own words. That this leaves **neither** safeguard in place is the
-  conclusion **this analysis** draws from those facts; the burden of showing otherwise is the operator's.
+- Asked directly about the two things a fair build needs together (a client seed the operator can't control,
+  **and** a server-side commitment made before that seed is known), the owner answered in writing, 3 July
+  2026: *"it was clear that the client:server seed pair is fixed and we didn't link to any public
+  commitment."* — the fixed client seed **and** the absent public commitment, in his own words. That both
+  halves were therefore missing is the conclusion **this analysis** draws from those facts; the burden of
+  showing otherwise is the operator's.
 
 ## The operator on knowing the outcomes — no seeding event was done
 The operator's owner, in writing (28 May 2026), on the in-house Slide:

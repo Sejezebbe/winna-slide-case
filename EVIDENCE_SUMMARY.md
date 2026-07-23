@@ -6,20 +6,30 @@ shows the operator **could** select outcomes undetectably, and had the motive an
 
 ---
 
-## The core finding: it fits neither way to be provably fair
+## The core finding: it broke both halves of provable fairness
 
-A game can be provably fair in exactly **one of two ways**, and needs only one of them:
+A provably-fair game needs **both** of these on every bet — not one or the other:
 
-1. **The player can change their client seed** (player-controlled, or a then-unmined future block) — so the
-   operator cannot know what result a server seed will produce, and cannot grind it; **or**
-2. **The server seeds are locked into a public, pre-committed hash-chain** — so the operator cannot freely
-   choose which server seed to serve.
+1. **A server-side commitment made before the client seed is known** — the operator publishes the hash of its
+   server seed (or locks its server seeds into a pre-committed hash-chain) *before* it can see the client
+   seed for that round; **and**
+2. **A client seed the operator cannot control or predict** — in a player-facing "Limbo" model this is the
+   **player's own** client seed, which the player can change; in a crash model it is a **then-unmined future
+   block**.
 
-**The VIP Slide had neither.** The client seed was fixed to an already-public **2023** Bitcoin block the
-player could not change (fails #1), *and* the revealed server seeds chain to **no** committed value (fails
-#2). With no safeguard of either kind, the result was a pure function of an operator-generated server seed
-the operator could compute and select in advance, undetectably. Everything below documents this — much of it
-in Winna's own words.
+Neither half alone is enough. A committed server seed is worthless if the operator can pick which client seed
+to pair it with (it grinds the client seed); an uncontrollable client seed is worthless if the operator can
+invent the server seed *after* the client seed is known (it grinds the server seed). The protection comes
+from the **ordering** — the operator is forced to lock one side before it can see or influence the other.
+
+**The VIP Slide broke both.** Its client seed was neither the player's nor a future block — it was a fixed,
+already-public **2023** Bitcoin block the operator chose and the player could not change. That fails #2 twice
+over: in a Limbo model the client seed is supposed to be the *player's* (it was not), and a years-old public
+block commits nothing. And because the operator already knew that client seed at all times, any per-bet
+server seed it generated was committed *after* it could already compute the outcome — so there was no real
+commitment either (fails #1). With both halves broken, the result was a pure function of an operator-generated
+server seed the operator could compute and select in advance, undetectably. Everything below documents this —
+much of it in Winna's own words.
 
 ---
 
