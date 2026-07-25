@@ -70,19 +70,27 @@ not by coincidence.
 
 ## Why the disputed bet pages show nothing
 
-The bet-details / fairness panel only renders when **both** seeds are present in the response.
+The fairness panel is suppressed **by game identifier**, before the seed data is ever considered.
 From `winna_code/BwhKo_ol.chunk.js`:
 
 ```js
 g = t === U["slide-vip"],
 p = t === U.slide || g,
 N = !!(d != null && d.client_seed && (d != null && d.server_seed))
+...
+!p && N && e.jsx("div", { className: "order-last w-full", children: /* the fairness panel */ })
 ```
 
-For the disputed `slide-vip` rounds, the seed fields are not returned — so `N` is false and the fairness
-section renders nothing. The blank page is not the game being "offline"; it is the component behaving exactly
-as written when the seed data is absent. Consistent with this, `bet/info` returns `"multiplier": null` and
-`"replay_url": null` for those rounds.
+The render condition is `!p && N`. For a `slide-vip` round `g` is true, so `p` is true, so `!p` is false and
+the panel never renders - and because `&&` short-circuits, `N` (the seed check) is never even evaluated. The
+blank panel is therefore a property of **which game served the round**, not of whether seed data happened to
+be present.
+
+**Stated honestly:** the same condition suppresses the panel for the public `slide` too, so this component
+alone does **not** distinguish the two games - it shows only that both in-house builds route around the
+generic fairness panel. What distinguishes them lies elsewhere: the public Slide has a published committed
+hash-chain that its seeds verify against (see [`SEEDS.md`](SEEDS.md)); the VIP rounds have none. Separately,
+`bet/info` returns `"multiplier": null` and `"replay_url": null` for 61 of the 62 disputed rounds.
 
 ## What this establishes — and what it does not
 
@@ -94,8 +102,9 @@ as written when the seed data is absent. Consistent with this, `bet/info` return
 - A player had no way to tell, from the interface, that the game had been switched — the two in-house games
   share a display name, a thumbnail, and the same rendering component.
 - The substitution is driven by a **per-account flag** (`isSlideVipEnabled`) in Winna's own client code.
-- The blank fairness panel on the disputed rounds follows from the seed fields being absent, not from the
-  game being unavailable.
+- The blank fairness panel on the disputed rounds follows from a game-identifier check in Winna's own code,
+  not from the game being unavailable. (The same check also applies to the public `slide`, so this alone does
+  not distinguish the two.)
 
 **Not established by this document alone:** that `slide-vip` was not provably fair. That conclusion rests on
 the separate technical record — a client seed fixed to an already-public 2023 Bitcoin block, the nonce pegged

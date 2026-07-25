@@ -15,8 +15,11 @@ identifier, **`tequ_slider`** (the third-party provider's slider). Same on-scree
 |---|---|
 | Bets | **62** (61 losses, 1 win) |
 | First bet | 15 May 2026, 01:38:33 UTC — $100,000 |
-| Last bet | 16 May 2026, 14:52:18 UTC — $800,000 |
+| Last bet | 16 May 2026, 14:52:18 UTC — $30,108.94 |
+| Largest bet | 16 May 2026, 14:50:35 UTC — $800,000 |
 | Total wagered | **$10,522,325.36** |
+| Total returned | **$900,000.00** (the single win, 6.00x on a $150,000 bet) |
+| **Net to the house on this game** | **$9,622,325.36** |
 
 Every bet — with its **Support ID** and a **live link to the bet page** — is listed in
 [`vip_slide_session_bets.csv`](vip_slide_session_bets.csv).
@@ -39,3 +42,8 @@ pre-existing balance the game consumed.
 *Method: balance change across the session = deposits + bonuses − total losses. No withdrawals, tips, vault
 moves or swaps occurred on 15–16 May, so the residual is the pre-existing balance drawn down. Totals include
 both casino ($9,553,966.14) and sportsbook ($30,565.90) losses in the window.*
+
+*Note on the two loss figures. Returns above are stated **gross of stake**. The `slide-vip` game alone is
+**$9,622,325.36** net, which is larger than the casino-wide figure of $9,553,966.14 for the same window: the
+difference is a residual of **+$68,359.22** net won on other casino games over those two days. The two
+numbers measure different things and both are correct.*

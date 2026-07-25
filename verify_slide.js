@@ -69,7 +69,7 @@ for (const b of PUBLIC_BETS) {
   console.log(`    bet ${b.id}: reaches terminating hash in ${k === null ? 'NO LINK' : k + ' hashes'}  ${k === Number(b.id) ? '(= its round number ✓)' : ''}`);
 }
 console.log('\n  Disputed VIP seeds chain to NOTHING — not to each other, not to any commitment:');
-const N = 2_000_000; // 11,000,000 verified offline; 2M here for runtime (a private ~40-bet game should link within tens)
+const N = 2_000_000; // 11,000,000 verified offline; 2M here for runtime (a private 62-round session should link within tens)
 let anyLink = false;
 for (const a of DISPUTED) {
   const links = [];
@@ -124,7 +124,7 @@ console.log('\n=== E. Grinding is trivial (why "fixed client seed + nonce 0" han
 console.log('\n=== F. Conclusion (confirmed model) ===');
 console.log('  Winna confirmed the VIP used a PER-BET HASHED SERVER SEED model, with the NONCE FIXED AT 0 and');
 console.log('  the CLIENT SEED FIXED to block 779588 (public since 2023). With nonce + client seed both fixed,');
-console.log('  the result is a pure function of the server seed, which the operator generates and picks.');
+console.log('  the result is a pure function of the server seed, which the operator generates and can pick.');
 console.log('  The pre-bet hash only locks the seed AFTER it is chosen; with a fixed, pre-known client seed the');
 console.log('  operator can roll seeds, take one that loses, then commit its hash => full, undetectable control.');
 console.log('  (Sections C/D are how the model was narrowed: not a chain, not per-player Limbo.)');

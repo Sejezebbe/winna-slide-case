@@ -83,17 +83,18 @@ unverifiable *"couldn't adjust them."*
 - **Pre-planned exit (owner, 12 Mar):** *"May 1st as a realistic start date … we can take them ourselves."*
 - **The exit (14 May):** the player's winnings triggered the clause that ended the bankroll arrangement; from
   that day Winna carried its own risk.
-- **New Slide the same night (owner, 14 May 23:30):** *"ok good new slide almost live."*
+- **New Slide the same night (owner, 14 May 21:30 UTC):** *"ok good new slide almost live."*
 - **The push (owner, 15 May 01:26 UTC):** *"guys please note: • cashback reset for [the player] from now on to
   normal 25% • extra 5% for slide for next 24 hours."* — a **Slide-specific** boost naming him; Winna staff
   confirm *"Noted [the owner] ✅"* a minute later. **His first disputed bet came 12 minutes later and all 62
   disputed bets followed it.** (Chat exports are UTC+2, converted here; bets are UTC from Winna's API.)
 - **After the loss:** the VIP Slide was removed (bet pages now error); a neutral engineer flagged the public
   Slide was reseeded **two days after** the disputed bets — *"very very strange."*
-- **[redacted].** Publicly on the [redacted], **
-  > **On the two loss figures:** the **$6,345,857.66** is the player's **deposited own money** lost — the
-  > restitution figure. The larger "net to the house" figure (~$9.6M) is bigger only because he also played
-  > through and lost **cashback / site bonuses** he'd been credited (not his own out-of-pocket money).
+  > **On the loss figures.** The claim is **$7,299,672.91** of the player's own money: **$6,345,857.66**
+  > deposited during the session (evidenced by deposit records, and the airtight floor) plus **$953,815.25**
+  > of pre-existing account balance the session consumed. A further **$2,284,859.13** of credited
+  > cashback / bonuses was also played through and lost, and is **not** claimed - it was not his own money.
+  > That is why the "net to the house" figure across the session (~$9.6M) is larger than the amount claimed.
 - **Interference on the fairness request (13 June):** account unreachable ~1 hour immediately after the
   fairness data was requested; staff attributed it to the devs *"updat[ing] something."*
 - **Independent statistical corroboration:** a simulation of the actual 62 bets puts the loss run at
@@ -114,16 +115,17 @@ unverifiable *"couldn't adjust them."*
 - **Weeks to produce the fairness data.** It was first requested in mid-June and still not fully produced
   weeks later. For a working provably-fair game, the commitment is a single page an operator can produce at
   once.
-- **Gated and specially provisioned for him.** The VIP Slide was a private, *high-limit* version. On 15 May
-  — hours before the session — Winna whitelisted his account to access it, in the operator's own words:
-  *"[redacted] [redacted],"* *"[redacted],"* *"can whitelist
-  ur ID."* So the ~$3M-limit Slide was bespoke to him, not a public offering.
+- **Account-gated, not a public offering.** The VIP Slide was reachable only on accounts carrying a
+  per-account flag: Winna's own shipped front-end code gates it on `isSlideVipEnabled` (see
+  [`GAME_IDENTITY.md`](GAME_IDENTITY.md)), and all 62 disputed rounds return
+  `"gameIdentifier": "slide-vip"` on Winna's public bet-info endpoint - a build distinct from both the
+  public `slide` and the third-party `tequ_slider`, while being displayed under the same name.
 - **A known, predictable target range.** He always targets a **minimum of ~3x, mostly 3.5x–4x.** His targets
   were therefore known in advance; against a fixed, already-public client seed, a known target band is all
   that is needed to pre-select server seeds that land just short of it. *(Inference.)*
-- **The self-booked limits — bespoke, then slashed.** He was given a bespoke ~$3M Slide limit (whitelisted to
-  his ID on 15 May). The owner had acknowledged the risk of this exposure — *"if we have 3m swings on slide we
-  could get to 10m downside on [the player] quickly"* — which is why they used a bankroll provider to carry it.
+- **The self-booked limits - high, then slashed.** The operator's owner had acknowledged the risk of this
+  exposure - *"if we have 3m swings on slide we could get to 10m downside on [the player] quickly"* - which
+  is why they used a bankroll provider to carry it.
   After the provider exited (14 May), Winna **self-booked** the game at those limits while he placed
   $700k–$800k bets and lost $6.35M — and on 28 May his Slide limit was cut to *"100k per spin."* An operator
   offering seven-figure bespoke limits on a *self-booked*, high-volatility game, then cutting them ~90% two

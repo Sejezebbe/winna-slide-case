@@ -19,7 +19,7 @@ The player's mid-May winnings triggered a contractual clause, and the bankroll p
 From that moment Winna was on its **own book** — now a large player loss was **Winna's own retained gain.**
 
 **3. That same night, a new in-house Slide goes live.**
-Owner, **14 May 23:30:** *"ok good new slide almost live."* → Winna's own self-booked Slide (no provider fee)
+Owner, **14 May 21:30 UTC:** *"ok good new slide almost live."* → Winna's own self-booked Slide (no provider fee)
 launches the very night the provider exited.
 
 **4. The player is limited on the *public* Slide.**
@@ -43,37 +43,36 @@ by direct correlation — his messages at 16:38–16:51 in the export react in r
 timestamps 14:37:09–14:52:18 UTC on 16 May.)*
 
 **7. The loss.**
-Across **62 bets on 15–16 May** he lost **61 of 62** — ~$10.5M wagered, **~$9.6M net to Winna.** His own
-deposited money lost was **$6,345,857.66** (the restitution figure); the net-to-house figure is larger only
-because he also played through and lost cashback/site bonuses he'd been credited. Winna's own Bet Details UI
+Across **62 bets on 15–16 May** he lost **61 of 62** — ~$10.5M wagered, **~$9.6M net to Winna.** The claim is
+**$7,299,672.91** of his own money: **$6,345,857.66** deposited during the session (the deposit-evidenced
+floor) plus **$953,815.25** of pre-existing balance the session consumed. A further **$2,284,859.13** of
+credited cashback/bonuses was played through and lost but is **not** claimed, which is why the net-to-house
+figure is larger than the amount claimed. Winna's own Bet Details UI
 shows his targets were 3.5x–4x (e.g. a $800k bet at target 3.50x returning 2.38x; a $700k bet at target 4x
 returning 2.33x) — all losses.
 
-**8. [redacted] ~45 minutes after the session.**
-On-chain, 
-
-**9. The game disappears — and the public Slide is quietly reseeded two days later.**
+**8. The game disappears — and the public Slide is quietly reseeded two days later.**
 The VIP Slide was **removed the day after** the losses (its bet pages now error). A neutral provably-fair
 engineer flagged that Winna published a **reseeding of the *public* Slide on 18 May — two days after the
 disputed bets**: *"Why did they do it exactly 2 days after your bets is very very strange"* (the reseed
 schedule otherwise would not have been due for years).
 
-**10. When the fairness data was requested, the account glitched.**
+**9. When the fairness data was requested, the account glitched.**
 On 13 June, right after the fairness data was first requested, the account went unreachable for ~1 hour;
 Winna's own staff attributed it to the **devs having "updated something"** at that exact moment.
 
-**11. Then weeks of delay and shifting explanations.**
+**10. Then weeks of delay and shifting explanations.**
 The fairness data was first requested in mid-June and still not fully produced weeks later. And Winna's
 account of *how* the VIP Slide was provably fair kept changing — first suggesting the per-player "Limbo"
 model, then a "seeding event," before confirming the per-bet hashed-server-seed model (nonce 0, fixed client
 seed). Meanwhile the public Slide is implemented *correctly* (future block + committed hash-chain) — so this
 is not a case of an operator that doesn't understand provable fairness.
 
-**12. They kept blaming the partner who had already left.**
+**11. They kept blaming the partner who had already left.**
 Even after 14 May, Winna repeatedly cited the (departed) bankroll provider as the reason for limits, withheld
 bonuses, and delays.
 
-**13. After the dispute, the operator cut off contact.**
+**12. After the dispute, the operator cut off contact.**
 On **3 July 2026** the player reported that the operator's host **blocked him and deleted messages** (*"He
 blocked me and deleted messages"*) — after the game had already been removed and the public Slide reseeded.
 
@@ -81,7 +80,7 @@ blocked me and deleted messages"*) — after the game had already been removed a
 
 Winna ended the arrangement where **someone else** covered the player's action, launched its own Slide the
 same night, closed the fair game he was winning on, opened a private game effectively provisioned to him alone with the
-fairness safeguards stripped out and whitelisted him onto it at $3M limits, took **~$9.6M into its own
+fairness safeguards stripped out and gated behind a per-account flag, took **~$9.6M into its own
 pocket**, then deleted the game and reseeded the public one two days later — all inside roughly 72 hours.
 
 ## Independent corroboration

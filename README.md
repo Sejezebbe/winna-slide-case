@@ -1,7 +1,8 @@
 # Winna.com "VIP Slide" — a provably-fair dispute
 
 A player was given access to a **private, account-gated "VIP Slide"** on winna.com, marketed as **provably
-fair.** Across 62 bets on 15–16 May 2026 he lost ~$6.35M (61 of 62 bets). This repository lays out — from
+fair.** Across 62 bets on 15–16 May 2026 he lost 61 of 62: ~$10.5M wagered, ~$9.6M net to the house, of which
+**$6,345,857.66** was his own deposited money. This repository lays out — from
 winna.com's **own** game code, the revealed seeds, published block data, and winna.com's **own written
 statements** — why that game was **not provably fair**, and asks one thing: **prove otherwise, or refund the
 bets.**
@@ -48,5 +49,5 @@ generated relative to the bet, and that only one was evaluated. If those are cle
 node verify_slide.js
 ```
 
-Everything here is independently checkable. Independent provably-fair engineers who reviewed it reached the
+Everything here is independently checkable. An independent provably-fair engineer who reviewed it reached the
 same conclusion: **not provably fair.**

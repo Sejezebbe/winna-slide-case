@@ -29,11 +29,15 @@ takes to find a server seed that produces a loss — or any specific result — 
 
 ---
 
-## The method is provably correct — it reproduces Winna's own live bets
+## The method is verified against Winna's own live bets
 
-The same code that reproduces the disputed rounds also reproduces **Winna's current live public Slide bets
-exactly**: bet **80030 → 39.08x** and bet **82857 → 2.79x** (section A). The formula and implementation are
-therefore not in question — only what an operator could do with them.
+The same script also reproduces **Winna's current live public Slide bets exactly**: bet **80030 → 39.08x**
+and bet **82857 → 2.79x** (section A). Note that the public Slide uses a *different* result function from the
+VIP (a crash curve at 0.965 over the bare client seed, with no nonce). What section A therefore establishes is
+that the **cryptographic method is implemented correctly** - the HMAC-SHA256 keying and the 4-byte float
+extraction that both games share. The VIP formula structure and the 98% setting rest on their own evidence,
+stated above: the operator's own code for the structure, and the operator's written statements plus exact
+reproduction of the charged multipliers for the edge.
 
 ## What a real pre-bet commitment looks like — and what the VIP had instead
 
